@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Johana practica</title>
+    <style>
+        table, th,td {
+         border: 1px solid black; 
+        }
+    </style><!--bordes y estilos de la tabla-->
+</head>
+<body><!--tabla con estilo ancho de 500px-->
+<table style="width: 500px;" > 
+
+<thead>
+    <tr> <!--fila dentro de table-->
+        <th>Precio</th> <!--columnas o cabecera de la tabla-->
+        <th>Producto</th>
+        <th>Tipo</th>
+</thead>
+
+<tbody>
+    <tr>
+        <td>manzanita tamaño grande</td>
+        <td>9.80</td>
+        <td>zero</td>
+    </tr>
+    <tr>
+        <td>coca</td>
+        <td>10.5</td>
+        <td>light</td>
+    </tr>
+    <tr>
+        <td>pepsi</td>
+        <td>9.50</td>
+        <td>light</td>
+</tbody>
+<tfoot>
+    <td></td>
+    <td>Total: 29.80</td>
+</tfoot>
+</tr>
+
+ </tr>
+</table>
+
+
+<!--lista no ordenada-->
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+</ul>
+<!--lista ordenada o numerada con value puede empezar en el numero indicado la numeracion-->
+<ol>
+    <li value="90">Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+    <li>Elemento 5</li>
+        <li>
+            <ol>
+                <li style="list-style-type:lower-alpha;">sub elemento1</li>
+                <li style="list-style-type:lower-alpha;">sub elemento1</li>
+                <li style="list-style-type:lower-alpha;">sub elemento1</li>
+                <li style="list-style-type:lower-alpha;">sub elemento1</li>
+            </ol>
+
+        </li>
+</ol>
+
+
+    <h1><i>Bienvenidos a mi primer página web</i></h1> <!--la i es para cursiva, la b es negritas-->
+    <h2><u>tamaño h2</u></h2><!--u texto subrayado-->
+    <h3>tamaño h3</h3><!--j-->
+    <h4><em>tamaño h4</em></h4> <!--texto en cursiva con enfasis-->
+    <h5><mark>tamaño h5</mark></h5><!--mark texto resaltado-->
+    <h6><s>tamaño h6</s></h6><!--texto tachado-->
+    <p><big>tamaño del texto grande con big</big></p>
+    <p><small>tamaño de texto pequeño con small</small></p>
+
+    <p>Este párrafo tiene <b>texto en negritas</b> tambien tiene <strong>texto importante</strong></p>
+
+    <p>Este párrafo tiene <i>texto en cursiva.</i>este parrafo tambien tiene <em>texto enfatizado.</em></p>
+    
+    <p>Este párrafo tiene <ins>texto insertado.</ins></p>
+
+    <p>Este párrafo tiene <del>texto eliminado</del></p>
+    <hr>
+<button><!--esto es un boton-->
+        pulsa aqui
+</button>
+
+<input type="text"> <!--sirve para introducir texto-->
+<input type="checkbox"> <!--sirve para casilla de verificacion-->
+
+    
+
+    <p>
+        <b>HOLA</b> Vamos a tomar<br> un curso completo de html,<br> <span style="color: rgb(154, 132, 242);">los comentarios</span> se escriben con !-- -- 
+    </p> <!-- br sirve para bajar un renglon, span sirve para refenciar texto, si agregas style="color" puedes cambiar color, tamaño, etc -->
+
+    <hr> <!--el hr es para poner lineas de separacion-->
+  
+    <p>mi primer link <a href="https://edu.gcfglobal.org/es/curso-basico-de-html/imagenes-y-links-en-html/1/">Haz clic aquí</a></p>
+
+    <h1>mi primera imagen</h1>
+    <img src="https://media.gcflearnfree.org/global/coding/html-basico/resources/img/perro-basquetbolista.png" width="480"><!--width es ancho-->
+    <h2>Reseña: El perro basquetbolista<br> (2008)</h2>
+    
+  <hr>
+  <h1>Hipervinculos</h1>
+
+    <a target="_blank" href="https://www.google.com.mx/">Ir a Google</a> <!--target igual a _blank nos abre el link en otra pestaña -->
+
+
+
+<!--campos de texto es form y dentro input y label para su etiqueta dentro de label se declara variable for= nombre, en el input se declara id=nombre-->
+<!--dentro de form ponemos action para dirigir los datos a un formulario y method para elegir como enviarlos el get es para tenerlos en la url no acepta mas de 200 caracteres y el post no los sube a url pero no es seguro, para enviar datos seguro es necesario encriptar-->
+<form action="/formulario" method="post">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre"/> 
+     <!--placeholder es para escribir etiqueta dentro del espacio de texto, en input el type es el tipo de propiedad-->
+<br>
+<!--campo contraseña-->
+    <label for="contra">Contraseña</label>
+    <input type="password" id="contra" name="contra" placeholder="Contraseña"/>
+<br>
+<!--campo email-->
+    <label for="mail">Correo Eléctronico</label>
+    <input type="email" id="mail" name="mail" placeholder="Correo Eléctronico"/>
+<br>
+<!--campo fecha de nacimiento-->
+    <label for="naci">Fecha de nacimiento</label>
+    <input type="date" id="naci" name="naci"/>
+<br>
+<!--campo de subir archivo-->
+    <label for="ine">Suba su INE</label>
+    <input type="file" id="ine" name="ine" />
+
+<!--campo mayor de edad-->
+<br>
+    <label for="mayor">Eres mayor de edad</label>
+    <input type="checkbox" id="mayor" name="mayor" />
+<br>
+<!--campo comentario, rows es renglon cols columnas dentro de la caja de comentario-->
+    <label for="comentario">Deje su comentario</label>
+<br>
+    <textarea cols="50" rows="5" id="comentario" placeholder="Deje aqui su comentario" name="comentario"></textarea>
+<br>
+    <input type="submit"/> <!--submit boton enviar-->
+    <button type="reset">Limpiar</button>
+</form>
+
+<button type="button"><img src="imagen/images.png" height="200"
+</button>  <!--height es altura-->
+
+</body>
+</html>
